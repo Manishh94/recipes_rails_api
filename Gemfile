@@ -46,6 +46,9 @@ gem 'rspec'
 # Ransack will help you easily add searching to your Rails application, without any additional dependencies.
 gem 'ransack'
 
+# will_paginate is a pagination library 
+gem 'will_paginate'
+
 group :production, :staging do
 end
 
