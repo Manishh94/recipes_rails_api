@@ -25,6 +25,8 @@ class Api::RecipesController < Api::BaseController
   
   def index
     @recipes = Recipe.ransack(params[:query]).result
+    # Make sure we don't flood with lot of data at once or it will be very slow or even get time out when it has lot of data.
+    @recipes = @recipes.paginate(page: params[:page], per_page: 25)
   end
   
   private
