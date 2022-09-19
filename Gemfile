@@ -43,6 +43,9 @@ gem 'importmap-rails', '~> 1.0'
 gem 'nokogiri', '1.12.5'
 gem 'rspec'
 
+# Ransack will help you easily add searching to your Rails application, without any additional dependencies.
+gem 'ransack'
+
 group :production, :staging do
 end
 
